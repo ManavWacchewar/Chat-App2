@@ -124,6 +124,8 @@
 
         .logo {
           font-weight: bold;
+          font-size: 27px;
+          color: rgb(25, 96, 190) ;
           @include tablet {
             display: none;
           }
@@ -164,7 +166,7 @@
           input {
             background-color: transparent;
             border: none;
-            color: white;
+            color: rgb(24, 119, 242);
             outline: none;
 
             &::placeholder {
@@ -209,21 +211,13 @@
 
       .chatInfo {
         height: 50px;
+        font-size: 25px;
+        color: rgb(30, 29, 29);
         background-color: whitesmoke;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding: 10px;
-      }
-
-      .chatIcons {
-        display: flex;
-        gap: 10px;
-
-        img {
-          height: 24px;
-          cursor: pointer;
-        }
       }
 
       .messages {
