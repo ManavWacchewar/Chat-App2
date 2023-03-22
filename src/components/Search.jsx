@@ -86,7 +86,7 @@ const Search = () => {
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
-      </div>
+      </div> 
       {err && <span>User not found!</span>}
       {user && (
         <div className="userChat" onClick={handleSelect}>

@@ -8,7 +8,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 const Register = () => {
   const [err, setErr] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -35,7 +35,7 @@ const Register = () => {
               displayName,
               photoURL: downloadURL,
             });
-            //create user on firestore
+            //create user on firestore 
             await setDoc(doc(db, "users", res.user.uid), {
               uid: res.user.uid,
               displayName,
@@ -69,7 +69,7 @@ const Register = () => {
           <input required type="email" placeholder="Email" />
           <input required type="password" placeholder="Password" />
           <input required style={{ display: "none" }} type="file" id="file" />
-          <label htmlFor="file">
+          <label htmlFor="file"> 
             <img src={Add} alt="" />
             <span>Add an Image</span>
           </label>
